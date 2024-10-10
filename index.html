@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Informe um numero:"));
+        var b = parseInt(prompt("Informe um numero:"));
+        var c = parseInt(prompt("Informe um numero:"));
+ 
+        if(a > b)
+          if (b > c)
+            document.write("<p class='painel'>" + a + " > " + b + " > " + c + "</p>"); 
+          else 
+            if (a > c)
+              document.write("<p class='painel'>" + a + " > " + c + " > " + b + "</p>");
+            else
+              document.write("<p class='painel'>" + c + " > " + a + " > " + b + "</p>");
+              else 
+              document.write("<p class='painel'>" + b + " > " + c + " > " + a + "</p>");
+    </script>
+</body>
+</html>
